@@ -9,6 +9,7 @@
     width: 1920px;
     margin: 0 auto;
 }
+
 header {
     background: #2C3E50;
     padding: 30px 0;
@@ -61,7 +62,7 @@ header {
 }
 .main_menu ul li::before{
     content: "";
-    background-image: url(../images/arrow1.png);
+    background-image: url(../images/Arrow1.png);
     width: 20px;
     height: 20px;
     position: absolute;
@@ -74,7 +75,7 @@ header {
     display: none;
 }
 .main_menu ul li:hover::before{
-    background-image: url(../images/arrow.png);
+    background-image: url(../images/Arrow.png);
 }
 .main_menu ul li:hover  {
     color: #1ABC9C;
@@ -124,7 +125,6 @@ header {
 }
 .slider_image img {
     margin-left: -39px;
-    margin-top: -2px;
 }
 .caption {
     display: inline-block;
@@ -267,7 +267,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-top: 42px;
-    margin-bottom:40px;
+    margin-bottom:39px;
 }
 .feat_header h2 {
     font-family: 'Lato';
@@ -318,7 +318,7 @@ header {
     text-decoration: none;
 }
 .prod_info {
-    padding: 11.4px 20px;
+    padding: 12px 20px;
     border:1px solid #E6E6E6;
 }
 .prod_info h3 {
@@ -423,7 +423,6 @@ header {
 .thefox_button {
     display: inline-block;
     vertical-align: middle;
-    height: 59px;
 }
 .thefox_button span{
     display: block;
@@ -432,11 +431,11 @@ header {
     font-weight: 900;
     color: white;
     background: #34495E;
-    border-radius: 9px;
+    border-radius: 11px;
     width: 180px;
     font-size: 15px;
     text-align: center;
-    height: 63px;
+    height: 61px;
     line-height: 60px;
 }
 .wrapper {
@@ -444,7 +443,7 @@ header {
     margin: 0 auto;
 }
 .hero3 {
-    margin-top: 47px;
+    margin-top: 46px;
 }
 .hero3_img {
     height: 600px;
@@ -544,6 +543,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    color:#A1B1BC;
 }
 .hero3_sm_footer {
     height: 50px;
@@ -650,9 +650,10 @@ header {
     z-index:1;
     display: none;
 }
-.resents .prod_items > div:hover .prod_info p .plus {
+.resents .prod_items > div .prod_info p span:hover + .plus,  .resents.prod_items > div .prod_info p .plus:hover {
     display: inline-block;
 }
+
 .resents .prod_items > div:hover p .plus:after {
     content: '+';
     color: #fff;
@@ -661,10 +662,9 @@ header {
     position: absolute;
     left: 24px;
 }
-
 .news_section {
     background:#ECF0F1;
-    padding-top:98px;
+    padding-top:96px;
     padding-bottom:71px;
 }
 .news_section h2 {
@@ -823,7 +823,6 @@ header {
     color:#A1B1BC;
     margin-top: 9px;
 }
-
 .store_slider {
     height: 672px;
     position: relative;
@@ -935,6 +934,7 @@ header {
 }
 .services_section {
     padding-bottom: 100px;
+    background: #F9FBFB;
 }
 .wrap-serv {
    width: 1175px;
@@ -968,17 +968,18 @@ header {
    width: 38px;
 }
 .service-row {
-   padding-top: 6px;
-   padding-bottom: 11px;
-   padding-left: 17px;
-   border: 1px solid #E5E5E5;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    border: 1px solid #E5E5E5;
+    background:#fff;
 }
 .service-left p {
    font-family: 'Lato';
    font-weight: 400;
    font-size: 14px;
    color: #A1B1BC;
-   line-height: 21px;
+   line-height: 20px;
 }
 .left-serv-content {
    margin-top: 44px;
@@ -1010,7 +1011,7 @@ header {
    font-family: 'Lato';
    font-weight: 700;
    color: #1ABC9C;
-
+   letter-spacing: -0.2px;
 }
 .service-row-text p{
    font-family: 'Lato';
@@ -1032,21 +1033,24 @@ header {
 }
 .service-row-child {
    position: relative;
-   margin-top: 36px;
+   margin-top: 32px;
    margin-left: 2px;
-}
-.service-row-child::after{
-   content: "";
-   position: absolute;
-   background: #E5E5E5;
-   width: 570px;
-   height: 1px;
-   left: -19px;
-   top: -21px;
 }
 .service-row.image {
    margin-bottom: 3px;
-   padding-bottom: 13px;
+   margin-top:3px;
+   padding-bottom: 15px;
+   position: relative;
+   
+}
+.service-row.image:before {
+    content:'';
+    width:100%;
+    height:1px;
+    position:absolute;
+    background:#E7EAEA;
+    left: 0px;
+    top: 36px;
 }
 .right-service-main-top ul li {
    display: inline-block;
@@ -1058,7 +1062,11 @@ header {
    position: relative;
 }
 .right-service-main {
-   margin-top: 43px;
+    margin-top: 43px;
+    border: 1px solid #E7EAEA;
+    border-top: 0px;
+    padding-bottom: 19px;
+    background:#fff;
 }
 .right-service-main-top {
    border: 1px solid #E5E5E5;
@@ -1173,6 +1181,7 @@ header {
 }
 .form_tags {
     padding-top: 94px;
+    padding-bottom:101px;
 }
 .form_tags .container > div {
     float:left;
@@ -1231,6 +1240,6 @@ header {
     font-weight: 400;
     font-size:14px;
     color:#A1B1BC;
-    background:#F5F7F8 url('../images/s.png') no-repeat;
+    background:#F5F7F8 url('../images/searching.png') no-repeat;
     background-position: 97.9% 16px;
 }
