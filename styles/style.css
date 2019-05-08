@@ -978,7 +978,7 @@ header {
    font-weight: 400;
    font-size: 14px;
    color: #A1B1BC;
-   line-height: 20px;
+   line-height: 21px;
 }
 .left-serv-content {
    margin-top: 44px;
@@ -1046,7 +1046,7 @@ header {
 }
 .service-row.image {
    margin-bottom: 3px;
-   padding-bottom: 15px;
+   padding-bottom: 13px;
 }
 .right-service-main-top ul li {
    display: inline-block;
